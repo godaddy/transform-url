@@ -1,0 +1,58 @@
+{
+  "name": "transform-url",
+  "version": "1.0.0",
+  "description": "Build URLs by transforming a template with params.",
+  "main": "./lib",
+  "browser": "./lib",
+  "module": "./src",
+  "license": "MIT",
+  "author": "GoDaddy Operating Company, LLC",
+  "contributors": [
+    "Andrew Gerard <agerard@godaddy.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godaddy/transform-url.git"
+  },
+  "keywords": [
+    "URL",
+    "uri",
+    "param",
+    "path",
+    "template",
+    "query",
+    "string",
+    "querystring"
+  ],
+  "scripts": {
+    "build": "babel src -d lib --no-comments",
+    "lint": "eslint src tests",
+    "lint:fix": "npm run lint -- --fix",
+    "pretest": "npm run lint",
+    "prepublish": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs src/*.js > README.md; echo"
+  },
+  "dependencies": {
+    "strict-uri-encode": "^2.0.0",
+    "url-search-params": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.6.0",
+    "eslint-config-godaddy": "^2.1.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-mocha": "^5.0.0",
+    "jest": "^23.5.0",
+    "jsdoc-to-markdown": "^4.0.1"
+  }
+}
