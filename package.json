@@ -37,7 +37,6 @@
     "docs": "jsdoc2md -t jsdoc2md/README.hbs src/*.js > README.md; echo"
   },
   "dependencies": {
-    "strict-uri-encode": "^2.0.0",
     "url-search-params": "^1.1.0"
   },
   "devDependencies": {

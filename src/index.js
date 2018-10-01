@@ -1,6 +1,5 @@
 /* eslint-disable max-statements,no-cond-assign */
 
-const strictUriEncode = require('strict-uri-encode');
 const parse = require('./simple-parse');
 const URLSearchParams = require('./url-search-params');
 
@@ -8,6 +7,16 @@ const defaultRegex = [
   /{([\w]+)}/g,
   /:([a-zA-Z][\w]+)/g
 ];
+
+/**
+ * Provides consistent encoding with URLSearchParams and adhering to RFC 3986.
+ * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent#Description
+ *
+ * @param {String} str - Component to encode
+ * @returns {String} - encoded component
+ * @private
+ */
+const fixedEncodeURIComponent = str => encodeURIComponent(str).replace(/[!'()*]/g, c => '%' + c.charCodeAt(0).toString(16));
 
 /**
  * Transform URL templates with provided params.
@@ -62,7 +71,7 @@ function transformUrl(urlTemplate, params = {}, options = {}) {
     const full = cur[0];
     const key = cur[1];
     const value = getParamValue(key);
-    return acc.replace(full, strictUriEncode(value));
+    return acc.replace(full, fixedEncodeURIComponent(value));
   }, urlTemplate);
 
   const { url: urlPart, query, hash: hashPart = '' } = parse(replacedUrl);
