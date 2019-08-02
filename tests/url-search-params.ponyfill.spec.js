@@ -3,8 +3,8 @@
  */
 /* eslint-disable no-new */
 
-const ponyfill = require('url-search-params');
-jest.mock('url-search-params');
+const ponyfill = require('@ungap/url-search-params');
+jest.mock('@ungap/url-search-params');
 const URLSearchParams = require('../src/url-search-params');
 
 describe('URLSearchParams', () => {
