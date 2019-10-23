@@ -1,6 +1,6 @@
 {
   "name": "transform-url",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Build URLs by transforming a template with params.",
   "main": "./lib",
   "browser": "./lib",
