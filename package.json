@@ -37,7 +37,7 @@
     "docs": "jsdoc2md -t jsdoc2md/README.hbs src/*.js > README.md; echo"
   },
   "dependencies": {
-    "@ungap/url-search-params": "^0.1.2"
+    "@ungap/url-search-params": "^0.1.4"
   },
   "devDependencies": {
     "babel": "^6.23.0",
