@@ -59,7 +59,7 @@ function transformUrl(urlTemplate, params = {}, options = {}) {
   matchers.forEach(m => {
     const re = new RegExp(m);
     let match;
-    while ((match = re.exec(urlTemplate)) !== null) {
+    while ((match = re.exec(urlTemplate)) != null) {
       matches.push(match);
     }
   });
