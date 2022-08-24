@@ -40,18 +40,17 @@
     "@ungap/url-search-params": "^0.1.2"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^23.4.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "coveralls": "^3.0.2",
-    "eslint": "^6.1.0",
-    "eslint-config-godaddy": "^3.1.0",
-    "eslint-plugin-jest": "^22.14.1",
-    "eslint-plugin-json": "^1.2.0",
-    "eslint-plugin-mocha": "^6.0.0",
-    "jest": "^23.5.0",
-    "jsdoc-to-markdown": "^5.0.0"
+    "@babel/core": "^7.18.13",
+    "@babel/cli": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-jest": "^24.9.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.22.0",
+    "eslint-config-godaddy": "^6.1.0",
+    "eslint-plugin-jest": "^26.8.7",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "jest": "^24.9.0",
+    "jsdoc-to-markdown": "^7.1.1"
   }
 }

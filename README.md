@@ -2,8 +2,7 @@
 
 [![Version npm](https://img.shields.io/npm/v/transform-url.svg?style=flat-square)](https://www.npmjs.com/package/transform-url)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/godaddy/transform-url/CI?style=flat-square)](https://github.com/godaddy/transform-url/actions/workflows/ci.yml)
-[![Dependencies](https://img.shields.io/david/godaddy/transform-url.svg?style=flat-square)](https://david-dm.org/godaddy/transform-url)[![Coverage Status](https://img.shields.io/coveralls/godaddy/transform-url/master.svg?style=flat-square)](https://coveralls.io/r/godaddy/transform-url?branch=master)
-
+[![Coverage Status](https://img.shields.io/coveralls/godaddy/transform-url/master.svg?style=flat-square)](https://coveralls.io/r/godaddy/transform-url?branch=master)
 
 Build URLs by transforming a template with params.
 
