@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### 1.1.3
+
+- revert to @ungap/url-search-params@^0.1.2
+
 ### 1.1.2
 
 - Upgrade dependencies
