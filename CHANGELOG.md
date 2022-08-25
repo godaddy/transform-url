@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### 1.1.2
+
+- Upgrade dependencies
+
 ### 1.1.1
 
 - Use CJS from `url-search-params` ([#4])
