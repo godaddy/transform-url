@@ -1,5 +1,6 @@
 # CHANGELOG
 
+### 2.0.0
 - update jest deps, remove search params polyfill, remove obsolete tests ([#42])
 
 ### 1.1.3
