@@ -33,7 +33,6 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "docs": "jsdoc2md -t jsdoc2md/README.hbs src/*.js > README.md; echo"
   },
   "devDependencies": {
@@ -41,7 +40,6 @@
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
     "babel-jest": "^29.0.3",
-    "coveralls": "^3.1.1",
     "eslint": "^8.22.0",
     "eslint-config-godaddy": "^6.1.0",
     "eslint-plugin-jest": "^27.0.0",
